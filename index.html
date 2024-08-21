@@ -59,6 +59,10 @@
             transform: scale(1.1);
         }
 
+        nav {
+            display: flex;
+        }
+
         nav a {
             font-size: 1.8rem;
             color: white;
@@ -92,23 +96,24 @@
                 display: none;
                 top: 100%;
                 right: 0;
-                width: 50%;
-                border-left: 3px solid #b74b4b;
-                border-bottom: 3px solid #b74b4b;
-                border-bottom-left-radius: 2rem;
-                padding: 2rem;
+                width: 100%;
+                border: 3px solid #b74b4b;
                 background-color: #161616;
                 z-index: 99;
+                flex-direction: column;
+                padding: 1rem 0;
             }
 
             nav.active {
-                display: block;
+                display: flex;
             }
 
             nav a {
                 display: block;
                 font-size: 2rem;
-                margin: 2rem 0;
+                margin: 1rem 0;
+                text-align: center; /* Center the text */
+                padding: 0.5rem; /* Add some padding for easier clicking */
             }
 
             nav a:hover,
@@ -348,4 +353,3 @@
 </body>
 
 </html>
-
