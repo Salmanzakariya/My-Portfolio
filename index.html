@@ -94,14 +94,17 @@
             nav {
                 position: absolute;
                 display: none;
-                top: 100%;
-                right: 0;
+                top: 60px; /* Adjust as needed */
+                left: 0;
                 width: 100%;
                 border: 3px solid #b74b4b;
                 background-color: #161616;
                 z-index: 99;
                 flex-direction: column;
-                padding: 0.5rem 0; /* Reduce padding */
+                padding: 0;
+                height: auto; /* Adjust height as needed */
+                min-height: 100vh; /* Full viewport height */
+                overflow-y: auto; /* Scroll if content overflows */
             }
 
             nav.active {
@@ -110,17 +113,17 @@
 
             nav a {
                 display: block;
-                font-size: 1.4rem; /* Smaller font size */
-                margin: 0.5rem 0; /* Reduce margin */
+                font-size: 2rem;
                 text-align: center; /* Center the text */
-                padding: 0.5rem; /* Add some padding for easier clicking */
+                padding: 1rem; /* Add some padding for easier clicking */
+                margin: 0; /* Remove margins for full-width items */
             }
 
             nav a:hover,
             nav a.active {
-                padding: 0.5rem; /* Adjust padding */
-                border-radius: 0.3rem; /* Smaller border radius */
-                border-bottom: 0.3rem solid #b74b4b; /* Smaller border size */
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border-bottom: 0.5rem solid #b74b4b;
             }
         }
 
@@ -353,3 +356,4 @@
 </body>
 
 </html>
+
