@@ -92,17 +92,18 @@
             }
 
             nav {
-                position: absolute;
+                position: fixed;
                 display: none;
-                top: 100%;
-                right: 0;
-                width: 80%; /* Adjusted width for mobile */
-                max-width: 400px; /* Optional max width */
+                top: 0;
+                left: 0;
+                width: 100%; /* Full width for mobile */
                 border: 3px solid #b74b4b;
                 background-color: #161616;
                 z-index: 99;
                 flex-direction: column;
                 padding: 1rem 0;
+                height: 100vh; /* Full height for mobile */
+                overflow-y: auto; /* Scrollable if content exceeds screen height */
             }
 
             nav.active {
@@ -335,7 +336,7 @@
         <div class="home-content">
             <h1>Hi, It's <span>Salmanubnu Zakariya</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>A passionate developer with expertise in front-end design and visual development. I craft user interfaces that seamlessly blend technical skills with artistic creativity. I'm currently pursuing a Bachelor's in Computer Science and actively participate in tech communities, including the Google Development Group in Kozhikode.</p>
+            <p>A passionate developer with expertise in front-end design and visual development. I craft user interfaces that seamlessly blend technical skills with artistic creativity. I'm currently pursuing a Bachelor's in Computer Science and actively participate in tech communities, including the Google Developers Group in Kozhikode. As the CEO of the Innovation and Entrepreneurship Development Centre (IEDC) at Calicut University, I've led innovative projects like a Python-based data entry tool integrated with Excel, a virtual mouse using MediaPipe and OpenCV, and a Python brute force simulator for password security. My skills include Python, HTML, SQL, and digital marketing, with a knack for creativity, problem-solving, and even adding humor to my work.</p>
             <div class="social-icons">
                 <a href="https://github.com/SalmanubnuZakariyaP"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/SalmanubnuZakariyaP"><i class="fab fa-linkedin"></i></a>
