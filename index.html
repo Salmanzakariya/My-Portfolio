@@ -38,7 +38,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            padding: 1rem 9%;
+            padding: 1rem 2%;
             background-color: transparent;
             display: flex;
             justify-content: space-between;
@@ -87,30 +87,34 @@
         }
 
         @media (max-width: 995px) {
+            header {
+                padding: 1rem 5%; /* Adjust padding for smaller screens */
+            }
+
             .menu-toggle {
                 display: block;
+                z-index: 101; /* Ensure it is above the navbar */
             }
 
             nav {
-                position: absolute;
-                display: none;
+                position: fixed;
                 top: 60px; /* Adjust as needed */
-                left: 0;
+                right: 0;
                 width: 100%;
                 border: 3px solid #b74b4b;
                 background-color: #161616;
-                z-index: 99;
+                z-index: 100;
                 flex-direction: column;
-                padding: 0;
-                height: auto; /* Adjust height as needed */
-                min-height: 100vh; /* Full viewport height */
+                padding: 1rem 0;
+                height: 100vh; /* Full viewport height */
                 overflow-y: auto; /* Scroll if content overflows */
+                display: none; /* Hide by default */
                 align-items: center; /* Center align the items */
                 gap: 1rem; /* Space between nav items */
             }
 
             nav.active {
-                display: flex;
+                display: flex; /* Show when active */
             }
 
             nav a {
@@ -319,9 +323,11 @@
 
 <body>
     <header>
-        <a class="logo">SALMAN</a>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
+        <div class="header-left">
+            <a class="logo">SALMAN</a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
         <nav>
             <a href="index.html" class="active">Home</a>
