@@ -92,18 +92,16 @@
             }
 
             nav {
-                position: fixed;
+                position: absolute;
                 display: none;
-                top: 0;
-                left: 0;
-                width: 100%; /* Full width for mobile */
+                top: 100%;
+                right: 0;
+                width: 100%;
                 border: 3px solid #b74b4b;
                 background-color: #161616;
                 z-index: 99;
                 flex-direction: column;
-                padding: 1rem 0;
-                height: 100vh; /* Full height for mobile */
-                overflow-y: auto; /* Scrollable if content exceeds screen height */
+                padding: 0.5rem 0; /* Reduce padding */
             }
 
             nav.active {
@@ -112,17 +110,17 @@
 
             nav a {
                 display: block;
-                font-size: 2rem;
-                margin: 1rem 0;
-                text-align: center;
-                padding: 0.5rem;
+                font-size: 1.4rem; /* Smaller font size */
+                margin: 0.5rem 0; /* Reduce margin */
+                text-align: center; /* Center the text */
+                padding: 0.5rem; /* Add some padding for easier clicking */
             }
 
             nav a:hover,
             nav a.active {
-                padding: 1rem;
-                border-radius: 0.5rem;
-                border-bottom: 0.5rem solid #b74b4b;
+                padding: 0.5rem; /* Adjust padding */
+                border-radius: 0.3rem; /* Smaller border radius */
+                border-bottom: 0.3rem solid #b74b4b; /* Smaller border size */
             }
         }
 
@@ -162,8 +160,8 @@
 
         /* Updated Image Styling */
         .home-img img {
-            width: 50vw;
-            max-width: 60rem;
+            width: 50vw; /* Make the image cover 80% of the viewport width */
+            max-width: 60rem; /* Larger max-width for desktop */
             border-radius: 30%;
             box-shadow: 0 0 25px #b74b4b;
             cursor: pointer;
@@ -290,7 +288,7 @@
             }
 
             .home-img img {
-                width: 60vw;
+                width: 60vw; /* Slightly smaller for tablets */
             }
         }
 
@@ -308,7 +306,7 @@
             }
 
             .home-img img {
-                width: 70vw;
+                width: 70vw; /* Smaller size for mobile devices */
             }
         }
     </style>
@@ -338,31 +336,20 @@
             <h3 class="typing-text">I'm a <span></span></h3>
             <p>A passionate developer with expertise in front-end design and visual development. I craft user interfaces that seamlessly blend technical skills with artistic creativity. I'm currently pursuing a Bachelor's in Computer Science and actively participate in tech communities, including the Google Developers Group in Kozhikode. As the CEO of the Innovation and Entrepreneurship Development Centre (IEDC) at Calicut University, I've led innovative projects like a Python-based data entry tool integrated with Excel, a virtual mouse using MediaPipe and OpenCV, and a Python brute force simulator for password security. My skills include Python, HTML, SQL, and digital marketing, with a knack for creativity, problem-solving, and even adding humor to my work.</p>
             <div class="social-icons">
-                <a href="https://github.com/SalmanubnuZakariyaP"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/SalmanubnuZakariyaP"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/SalmanubnuZP"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/salmanubnuzakariya/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Salmanzakariya"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/salman__zak/"><i class="fa-brands fa-instagram"></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="resume.html" class="btn">Resume</a>
         </div>
     </section>
+
     <script>
-        // Toggle mobile menu visibility
-        const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav');
-
-        menuToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
-        });
-
-        // Close mobile menu when a link is clicked
-        const navLinks = document.querySelectorAll('nav a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                nav.classList.remove('active');
-            });
+        // Toggle mobile menu
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('nav').classList.toggle('active');
         });
     </script>
 </body>
 
 </html>
-
