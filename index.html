@@ -96,8 +96,9 @@
                 display: none;
                 top: 100%;
                 right: 0;
-                width: 100%; /* Make the navbar full width */
-                border: none; /* Remove border to make it seamless */
+                width: 80%; /* Adjusted width for mobile */
+                max-width: 400px; /* Optional max width */
+                border: 3px solid #b74b4b;
                 background-color: #161616;
                 z-index: 99;
                 flex-direction: column;
@@ -113,7 +114,7 @@
                 font-size: 2rem;
                 margin: 1rem 0;
                 text-align: center;
-                padding: 0.5rem; /* Add some padding for easier clicking */
+                padding: 0.5rem;
             }
 
             nav a:hover,
@@ -160,8 +161,8 @@
 
         /* Updated Image Styling */
         .home-img img {
-            width: 50vw; /* Make the image cover 80% of the viewport width */
-            max-width: 60rem; /* Larger max-width for desktop */
+            width: 50vw;
+            max-width: 60rem;
             border-radius: 30%;
             box-shadow: 0 0 25px #b74b4b;
             cursor: pointer;
@@ -288,7 +289,7 @@
             }
 
             .home-img img {
-                width: 60vw; /* Slightly smaller for tablets */
+                width: 60vw;
             }
         }
 
@@ -306,7 +307,7 @@
             }
 
             .home-img img {
-                width: 70vw; /* Smaller size for mobile devices */
+                width: 70vw;
             }
         }
     </style>
@@ -334,5 +335,33 @@
         <div class="home-content">
             <h1>Hi, It's <span>Salmanubnu Zakariya</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>A passionate developer with expertise in front-end design and visual development. I craft user
+            <p>A passionate developer with expertise in front-end design and visual development. I craft user interfaces that seamlessly blend technical skills with artistic creativity. I'm currently pursuing a Bachelor's in Computer Science and actively participate in tech communities, including the Google Development Group in Kozhikode.</p>
+            <div class="social-icons">
+                <a href="https://github.com/SalmanubnuZakariyaP"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/SalmanubnuZakariyaP"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/SalmanubnuZP"><i class="fab fa-twitter"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+    </section>
+    <script>
+        // Toggle mobile menu visibility
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Close mobile menu when a link is clicked
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
 
