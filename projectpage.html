@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Salmanubnu Zakariya. Explore my work and completed projects.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>My Projects - Salmanubnu Zakariya</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            margin-top: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 3rem;
+            color: #b74b4b;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        nav a {
+            font-size: 1.8rem;
+            color: white;
+            margin-left: 4rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #b74b4b;
+            border-bottom: 3px solid #b74b4b;
+        }
+
+        section {
+            padding: 10rem 9%;
+            background-color: black;
+        }
+
+        .section-title {
+            font-size: 3.6rem;
+            color: #b74b4b;
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .project-card {
+            background-color: #1f1f1f;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 0.5rem solid #b74b4b;
+        }
+
+        .project-card:hover {
+            transform: translateY(-1rem);
+        }
+
+        .project-content {
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-content h3 {
+            font-size: 2.4rem;
+            color: #b74b4b;
+            margin-bottom: 1rem;
+        }
+
+        .project-content p {
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .project-content a {
+            color: white;
+            background-color: #b74b4b;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top: auto;
+        }
+
+        .project-content a:hover {
+            background-color: white;
+            color: #b74b4b;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1200px) {
+            .projects-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .projects-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .section-title {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .projects-container {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2.4rem;
+            }
+
+            nav a {
+                font-size: 1.4rem;
+                margin-left: 2rem;
+            }
+
+            .logo {
+                font-size: 2.5rem;
+            }
+
+            header {
+                padding: 1rem 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="logo">SALMAN</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="skills.html">Skills</a>
+            <a href="projectpage.html">Projects</a>
+            <a href="contactpage.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="img/project1.jpg" alt="Project 1 Thumbnail">
+                <div class="project-content">
+                    <h3>Virtual Mouse</h3>
+                    <p>A virtual mouse in Python using OpenCV, Mediapipe, and Autopy leverages computer vision to track hand movements and gestures via a webcam. OpenCV captures video, Mediapipe detects hand landmarks, and Autopy simulates mouse actions, enabling control of the cursor without physical input devices.</p>
+                    <a href="https://github.com/Salmanzakariya/Virtual_mouse">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project2.jpg" alt="Project 2 Thumbnail">
+                <div class="project-content">
+                    <h3>Chatbot using Gemini</h3>
+                    <p> I recently embarked on an exciting project to develop the Gemini Chatbot using Python. This chatbot is designed to engage users in friendly conversations, answering questions, providing information, and even cracking a few jokes!</p>
+                    <a href="https://github.com/Salmanzakariya/Chatbot-using-gemini">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project3.jpeg" alt="Project 3 Thumbnail">
+                <div class="project-content">
+                    <h3>Brute-force Simulator</h3>
+                    <p>Developed a brute-force simulator using Python's `itertools` to generate and test combinations of characters efficiently. This tool mimics password cracking attempts, allowing security testing by iterating through all possible passwords within a defined character set. Ideal for ethical hacking and Cybersecurity.</p>
+                    <a href="https://github.com/Salmanzakariya/Bruteforce_stimulator_2.0">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project4.jpeg" alt="Project 4 Thumbnail">
+                <div class="project-content">
+                    <h3>Data-entry-form-with-excel</h3>
+                    <p>Created a Python-based data entry form that integrates seamlessly with Excel, simplifying data management. This solution automates the process of capturing and storing data, reducing manual entry errors, and enhancing efficiency. Ideal for streamlining repetitive tasks, ensuring data accuracy, and boosting productivity in everyday operations.</p>
+                    <a href="https://github.com/Salmanzakariya/Data-entry-form-with-excel">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project5.png" alt="Project 5 Thumbnail">
+                <div class="project-content">
+                    <h3>Jokes</h3>
+                    <p>Integrated PyJokes into a CustomTkinter Python application to display random, programming-related jokes in a sleek, modern UI. This combo adds a fun element to your app, making it both engaging and user-friendly. Ideal for developers looking to add humor to their projects!</p>
+                    <a href="https://github.com/Salmanzakariya/jokes.2o">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project6.png" alt="Project 6 Thumbnail">
+                <div class="project-content">
+                    <h3>QR code generator</h3>
+                    <p>Developed a QR code generator using Python that allows for quick and easy creation of custom QR codes. This tool supports various data types, from URLs to text, and generates high-quality QR codes in seconds. Perfect for businesses, marketing, or personal projects, this solution simplifies sharing information and enhances user engagement.</p>
+                    <a href="https://github.com/Salmanzakariya/QR-code-genrator">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project7.jpeg" alt="Project 7 Thumbnail">
+                <div class="project-content">
+                    <h3>File Merger</h3>
+                    <p>Developed a Python script to automate file merging, efficiently combining multiple files into a single, cohesive document. This tool supports various file formats, reduces manual effort, and eliminates errors in data consolidation. Ideal for streamlining workflows and saving time, especially when handling large volumes of data.</p>
+                    <a href="https://github.com/Salmanzakariya/Filemerger">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="img/project8.jpg" alt="Project 8 Thumbnail">
+                <div class="project-content">
+                    <h3>Automated message</h3>
+                    <p>This Python script automates typing a message multiple times using `pyautogui`. It takes user input, types the message with a delay between each entry, and presses 'enter' after each message. Useful for automating repetitive tasks like sending multiple identical messages.</p>
+                    <a href="https://github.com/Salmanzakariya/Repeated_messgae">View Project</a>
+                </div>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+</body>
+</html>
