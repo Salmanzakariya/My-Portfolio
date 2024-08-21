@@ -96,8 +96,8 @@
                 display: none;
                 top: 100%;
                 right: 0;
-                width: 100%;
-                border: 3px solid #b74b4b;
+                width: 100%; /* Make the navbar full width */
+                border: none; /* Remove border to make it seamless */
                 background-color: #161616;
                 z-index: 99;
                 flex-direction: column;
@@ -112,7 +112,7 @@
                 display: block;
                 font-size: 2rem;
                 margin: 1rem 0;
-                text-align: center; /* Center the text */
+                text-align: center;
                 padding: 0.5rem; /* Add some padding for easier clicking */
             }
 
@@ -334,22 +334,5 @@
         <div class="home-content">
             <h1>Hi, It's <span>Salmanubnu Zakariya</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>A passionate developer with expertise in front-end design and visual development. I craft user interfaces that seamlessly blend technical skills with artistic creativity. I'm currently pursuing a Bachelor's in Computer Science and actively participate in tech communities, including the Google Developers Group in Kozhikode. As the CEO of the Innovation and Entrepreneurship Development Centre (IEDC) at Calicut University, I've led innovative projects like a Python-based data entry tool integrated with Excel, a virtual mouse using MediaPipe and OpenCV, and a Python brute force simulator for password security. My skills include Python, HTML, SQL, and digital marketing, with a knack for creativity, problem-solving, and even adding humor to my work.</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/salmanubnuzakariya/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Salmanzakariya"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/salman__zak/"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <a href="resume.html" class="btn">Resume</a>
-        </div>
-    </section>
+            <p>A passionate developer with expertise in front-end design and visual development. I craft user
 
-    <script>
-        // Toggle mobile menu
-        document.querySelector('.menu-toggle').addEventListener('click', function () {
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
-</body>
-
-</html>
