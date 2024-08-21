@@ -61,12 +61,12 @@
 
         nav {
             display: flex;
+            gap: 2rem; /* Space between nav items */
         }
 
         nav a {
             font-size: 1.8rem;
             color: white;
-            margin-left: 4rem;
             font-weight: 500;
             transition: 0.3s ease;
             border-bottom: 3px solid transparent;
@@ -105,6 +105,8 @@
                 height: auto; /* Adjust height as needed */
                 min-height: 100vh; /* Full viewport height */
                 overflow-y: auto; /* Scroll if content overflows */
+                align-items: center; /* Center align the items */
+                gap: 1rem; /* Space between nav items */
             }
 
             nav.active {
@@ -356,4 +358,3 @@
 </body>
 
 </html>
-
